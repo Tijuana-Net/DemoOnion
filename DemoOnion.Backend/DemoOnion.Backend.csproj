@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DemoOnion.Infraestructura\DemoOnion.Infraestructura.csproj" />
+    <ProjectReference Include="..\DemoOnion.Services\DemoOnion.Services.csproj" />
+  </ItemGroup>
+
+</Project>
