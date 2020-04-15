@@ -30,10 +30,7 @@ namespace DemoOnion.Backend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
-            services.AddTransient<IUsersResource, UsersResource>();
-            services.AddTransient<IUsuariosServices, UsuriosServices>();
-
+            Setups.Dependencies.Initiate(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
